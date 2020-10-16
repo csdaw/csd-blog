@@ -1,6 +1,6 @@
 [
   {
-    "path": "posts/welcome/",
+    "path": "posts/2020-10-16-welcome-to-csd-blog/",
     "title": "Welcome to CSD blog",
     "description": "Welcome to our new blog, CSD blog. We hope you enjoy \nreading what we have to say!",
     "author": [
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2020-10-16T22:41:21+01:00",
+    "last_modified": "2020-10-16T22:51:04+01:00",
     "input_file": {}
   }
 ]

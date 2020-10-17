@@ -3,25 +3,26 @@ d-article {
   color: #0000FF;
 }
 
+d-title p {
+  margin-bottom: 0;
+}
+
 d-byline {
-  font-family: sans-serif;
   padding: 0.5rem 0;
-  background-color: orange;
 }
 
 d-byline h3 {
-  font-family: sans-serif;
   color: purple;
 }
 
 /* author and affiliation heading margin */
 d-byline .byline h3 {
-    margin-top: 0.5em;
+    margin-top: 0;
 }
 
 /* published and citation heading margin */
 d-byline .byline .authors-affiliations h3 {
-    margin-top: 0.5em;
+    margin-top: 0;
 }
 
 d-byline .byline {
@@ -29,6 +30,4 @@ d-byline .byline {
   height: auto-fit;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 50px;
-  font-family: serif;
-  background-color: blue;
 }

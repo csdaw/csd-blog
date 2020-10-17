@@ -2022,16 +2022,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
 <style type="text/css">
-/* text colour */
-d-article {
-  color: #00FF00;
-}
-
-h1 {
-  color: #0000FF;
-}
-
-/* appearance of tags in index */
+/* tag appearance in index */
 d-article .posts-list .dt-tags .dt-tag {
   font-size: 55%;
   color: red;
@@ -2040,7 +2031,7 @@ d-article .posts-list .dt-tags .dt-tag {
   line-height: 1.5em;
 }
 
-/* appearance of tags in article */
+/* tag appearance in article */
 .dt-tags .dt-tag {
   font-size: 60%;
   color: red;
@@ -2049,9 +2040,47 @@ d-article .posts-list .dt-tags .dt-tag {
   line-height: 1.5em;
 }
 
-/* appearance of tags in article */
+/* tag appearance in article */
 d-title .dt-tags {
   margin-top: 0;
+}
+
+/* byline padding in article */
+d-byline {
+  padding: 0.5rem 0;
+}
+
+/* byline heading colour in article */
+d-byline h3 {
+  color: purple;
+}
+
+/* byline margin for author and affiliation heading*/
+d-byline .byline h3 {
+    margin-top: 0;
+}
+
+/* byline margin for published and citation heading*/
+d-byline .byline .authors-affiliations h3 {
+    margin-top: 0;
+}
+
+/* byline grid order*/
+d-byline .byline {
+  display: grid;
+  height: auto-fit;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 50px;
+}
+
+/* text colour */
+d-article {
+  color: #0000FF;
+}
+
+/* heading 1 colour */
+h1 {
+  color: #0000FF;
 }
 
 </style>

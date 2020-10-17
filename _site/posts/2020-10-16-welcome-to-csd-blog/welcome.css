@@ -9,17 +9,26 @@ d-byline {
   background-color: orange;
 }
 
+d-byline h3 {
+  font-family: sans-serif;
+  color: purple;
+}
+
+/* author and affiliation heading margin */
+d-byline .byline h3 {
+    margin-top: 0.5em;
+}
+
+/* published and citation heading margin */
+d-byline .byline .authors-affiliations h3 {
+    margin-top: 0.5em;
+}
+
 d-byline .byline {
   display: grid;
-  height: 100px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px;
+  height: auto-fit;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 50px;
   font-family: serif;
   background-color: blue;
 }
-
-d-byline .byline .authors-affiliations {
-  background-color: green;
-}
-
-

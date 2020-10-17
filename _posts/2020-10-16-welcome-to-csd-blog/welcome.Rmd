@@ -9,6 +9,7 @@ author:
     affiliation: Spacely Sprockets
     affiliation_url: https://example.com/spacelysprokets
 date: 10-16-2020
+citation_url: https://rstudio.github.io/distill
 output:
   distill::distill_article:
     self_contained: false

@@ -1,7 +1,8 @@
 ---
-title: "About this blog"
-description: |
-  Some additional details about the blog
+title: "About"
+output:
+  distill::distill_article:
+    css: about.css
 ---
 
 ```{r setup, include=FALSE}

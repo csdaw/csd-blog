@@ -17,7 +17,6 @@ output:
 preview: https://cdn.cloudflare.steamstatic.com/steam/apps/730820/capsule_616x353.jpg
 categories:
   - 2020 October
-  - Test
 ---
 
 ```{r setup, include=FALSE}

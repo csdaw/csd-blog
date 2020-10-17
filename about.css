@@ -1,0 +1,29 @@
+d-title {
+  position: relative;
+  height: 350px;
+}
+
+d-title::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  width: 100%;
+  height: 90%;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 255, 255, 0), 
+      rgba(255, 255, 255, 1)
+    ),
+    url(splash-small.jpg);
+  background-position: 0 0; 
+  background-repeat: no-repeat;
+}
+
+d-title h1 {
+  padding-top: 13rem;
+}
+
+d-article {
+  border: 0;
+}

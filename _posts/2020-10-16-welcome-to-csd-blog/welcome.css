@@ -2,11 +2,12 @@ d-title {
   background: 
     /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(255, 255, 255, 0.65), 
-      rgba(255, 255, 255, 0.65)
+      rgba(255, 255, 255, 0.68), 
+      rgba(255, 255, 255, 0.68)
     ),
     /* bottom, image */
-    url(https://i.pinimg.com/originals/77/7f/7c/777f7cee193f894ac4ff51575c793ac0.jpg) no-repeat top center fixed;
+    url(title-image.jpg) no-repeat top left fixed;
+    background-position: cover;
 }
 
 d-title h1 {

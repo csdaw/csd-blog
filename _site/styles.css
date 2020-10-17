@@ -6,6 +6,7 @@ header, nav, nav-left, nav-right {
 .distill-site-header {
   background-color: #0E423E;
   font-weight: bold;
+  color: #F78A21;
 }
 
 /* nav bar items */
@@ -16,6 +17,10 @@ header, nav, nav-left, nav-right {
 
 .distill-site-header a {
   padding: 10px 8px 10px 8px;
+}
+
+.distill-site-header a:hover {
+  color: #FFCC00;
 }
 
 .distill-site-header .nav-left {
@@ -34,10 +39,14 @@ header, nav, nav-left, nav-right {
   height: 45px;
 }
 
+/* hide index title */
+.posts-list .posts-list-caption {
+  display: none;
+}
+
 /* tag appearance in index */
 d-article .posts-list .dt-tags .dt-tag {
   font-size: 55%;
-  color: red;
   padding: 0.2em 0.2em;
   margin-bottom: 0;
   line-height: 1.5em;

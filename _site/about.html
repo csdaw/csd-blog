@@ -2009,13 +2009,19 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
     height: 45px;
   }
 
+  .distill-site-header {
+    background-color: #0E423E;
+    font-weight: bold;
+  }
+
   /* nav bar items */
-  .distill-site-header a, .distill-site-header .title {
+  .distill-site-header .title {
+    min-width: 100px;
     padding: 10px 8px 10px 8px;
   }
 
-  .distill-site-header .title {
-    min-width: 100px;
+  .distill-site-header a {
+    padding: 10px 8px 10px 8px;
   }
 
   .distill-site-header .nav-left {
@@ -2046,7 +2052,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   /* tag appearance in article */
   .dt-tags .dt-tag {
     font-size: 60%;
-    color: red;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 0.2em 0.2em;
     margin-bottom: 0;
     line-height: 1.5em;
@@ -2085,15 +2091,16 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
     grid-template-rows: 50px;
   }
 
+  /* heading 1 colour */
+  h1 {
+    color: #000000;
+  }
+
   /* text colour */
   d-article {
     color: #000000;
   }
 
-  /* heading 1 colour */
-  h1 {
-    color: #0000FF;
-  }
 
   </style>
   <!--/radix_placeholder_site_in_header-->

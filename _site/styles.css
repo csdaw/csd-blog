@@ -8,6 +8,26 @@ header, nav, nav-left, nav-right {
   padding: 10px 8px 10px 8px;
 }
 
+.distill-site-header .title {
+  min-width: 100px;
+}
+
+.distill-site-header .nav-left {
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+}
+
+.distill-site-header .logo img {
+  max-height: 37px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.distill-site-header .logo {
+  height: 45px;
+}
+
 /* tag appearance in index */
 d-article .posts-list .dt-tags .dt-tag {
   font-size: 55%;

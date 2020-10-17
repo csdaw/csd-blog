@@ -1,9 +1,11 @@
-name: "csd-blog"
-title: "CSD blog"
+name: "big-whoop"
+title: "Big Whoop"
 description: |
-  CSD blog
+  Big Whoop
 output_dir: "_site"
 navbar:
+  logo:
+    image: logo.png
   right:
     - text: "Home"
       href: index.html

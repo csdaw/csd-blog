@@ -1,33 +1,4 @@
-/* text colour */
-d-article {
-  color: #0000FF;
-}
-
-d-title p {
-  margin-bottom: 0;
-}
-
-d-byline {
-  padding: 0.5rem 0;
-}
-
-d-byline h3 {
-  color: purple;
-}
-
-/* author and affiliation heading margin */
-d-byline .byline h3 {
-    margin-top: 0;
-}
-
-/* published and citation heading margin */
-d-byline .byline .authors-affiliations h3 {
-    margin-top: 0;
-}
-
-d-byline .byline {
-  display: grid;
-  height: auto-fit;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: 50px;
+d-title {
+  background: 
+    url(https://i.pinimg.com/originals/77/7f/7c/777f7cee193f894ac4ff51575c793ac0.jpg) no-repeat top center fixed;
 }

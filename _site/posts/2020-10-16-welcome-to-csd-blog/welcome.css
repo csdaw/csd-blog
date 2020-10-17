@@ -2,3 +2,24 @@
 d-article {
   color: #0000FF;
 }
+
+d-byline {
+  font-family: sans-serif;
+  padding: 0.5rem 0;
+  background-color: orange;
+}
+
+d-byline .byline {
+  display: grid;
+  height: 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+  font-family: serif;
+  background-color: blue;
+}
+
+d-byline .byline .authors-affiliations {
+  background-color: green;
+}
+
+

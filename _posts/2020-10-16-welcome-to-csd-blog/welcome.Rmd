@@ -12,6 +12,7 @@ date: 10-16-2020
 output:
   distill::distill_article:
     self_contained: false
+    css: welcome.css
 preview: https://cdn.cloudflare.steamstatic.com/steam/apps/730820/capsule_616x353.jpg
 categories:
   - 2020 October

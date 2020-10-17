@@ -1,3 +1,13 @@
+/* nav bar itself */
+header, nav, nav-left, nav-right {
+  height: 45px;
+}
+
+/* nav bar items */
+.distill-site-header a, .distill-site-header .title {
+  padding: 10px 8px 10px 8px;
+}
+
 /* tag appearance in index */
 d-article .posts-list .dt-tags .dt-tag {
   font-size: 55%;
@@ -51,7 +61,7 @@ d-byline .byline {
 
 /* text colour */
 d-article {
-  color: #0000FF;
+  color: #000000;
 }
 
 /* heading 1 colour */

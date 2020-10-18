@@ -66,6 +66,10 @@ d-title .dt-tags {
   margin-top: 0;
 }
 
+d-title p {
+  margin-bottom: 0;
+}
+
 /* byline padding in article */
 d-byline {
   padding: 0.5rem 0;

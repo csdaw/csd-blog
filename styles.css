@@ -59,6 +59,11 @@ header, nav, nav-left, nav-right {
   display: none;
 }
 
+/* hide author in posts list */
+.posts-list .metadata .dt-authors {
+  display: none;
+}
+
 /* tag appearance in index */
 d-article .posts-list .dt-tags .dt-tag {
   font-size: 55%;

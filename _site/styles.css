@@ -39,6 +39,21 @@ header, nav, nav-left, nav-right {
   height: 45px;
 }
 
+@media screen and (max-width: 768px) {
+  
+  /* length of open nav bar in mobile width */
+  .distill-site-header.responsive {
+    position: relative;
+    min-height: 200px;
+  }
+  
+  /* post padding in index */
+  .posts-with-sidebar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 /* hide index title */
 .posts-list .posts-list-caption {
   display: none;
@@ -77,7 +92,7 @@ d-byline {
 
 /* byline heading colour in article */
 d-byline h3 {
-  color: purple;
+  color: #F65B24;
 }
 
 /* byline margin for author and affiliation heading*/

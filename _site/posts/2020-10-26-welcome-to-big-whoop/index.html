@@ -487,22 +487,19 @@ function offsetURL(url) {
   return offset ? offset + '/' + url : url;
 }
 
-function createIndex() {
-  var options = {
-    keys: [
-      "title",
-      "categories",
-      "description",
-      "contents"
-    ]
-  };
-  return new window.Fuse([],options);
-}
-
 function createFuseIndex() {
 
   // create fuse index
-  var options = { keys: ["title", "description", "contents"] };
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
   var fuse = new window.Fuse([], options);
 
   // fetch the main search.json
@@ -570,12 +567,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             shouldSort: true,
             minMatchCharLength: 2,
             limit: 10,
-            keys: [
-              { name: 'title', weight: 20 },
-              { name: 'categories', weight: 15 },
-              { name: 'description', weight: 10 },
-              { name: 'contents', weight: 5 },
-            ],
           };
           var results = fuse.search(query, searchOptions);
           callback(results
@@ -873,7 +864,7 @@ d-article pre code {
 d-article pre,
 d-article div.sourceCode,
 d-article div.sourceCode pre {
-  overflow: hidden;
+  overflow: auto;
 }
 
 d-article div.sourceCode {
@@ -2075,6 +2066,10 @@ header, nav, nav-left, nav-right {
     padding-left: 16px;
     padding-right: 16px;
   }
+  
+  d-article {
+    color: #0FF000;
+  }
 }
 
 /* hide index title */
@@ -2151,6 +2146,42 @@ d-article {
   color: #000000;
 }
 
+@media (min-width: 768px) {
+  d-article {
+    color: #000000;
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start middle-start text-start] 65px 65px 65px 65px 65px 65px 65px 65px [ kicker-end text-end gutter-start] 45px [middle-end] 45px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+  
+    /* post padding in index */
+  .posts-with-sidebar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media and (min-width: 1000px) {
+  d-article {
+    color: #000000;
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+}
+
+@media (min-width: 1180px) {
+  d-article {
+    color: #000000;
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 20px [text-start kicker-end] 90px 90px 90px 90px 90px 90px 90px 90px [text-end gutter-start] 20px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+  
+    
+    /* post padding in index */
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
 
 </style>
 <!--/radix_placeholder_site_in_header-->

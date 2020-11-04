@@ -1,3 +1,7 @@
+body {
+  background-color: #110E17;
+}
+
 /* nav bar itself */
 header, nav, nav-left, nav-right {
   height: 45px;
@@ -52,10 +56,6 @@ header, nav, nav-left, nav-right {
     padding-left: 16px;
     padding-right: 16px;
   }
-  
-  d-article {
-    color: #0FF000;
-  }
 }
 
 /* hide index title */
@@ -97,6 +97,11 @@ d-title p {
 /* byline padding in article */
 d-byline {
   padding: 0.5rem 0;
+  color: #FFFFFF;
+}
+
+d-byline a {
+  color: #FFFFFF;
 }
 
 /* byline heading colour in article */
@@ -122,23 +127,24 @@ d-byline .byline {
   grid-template-rows: 50px;
 }
 
-/* heading 1 colour */
-h1 {
-  color: #000000;
-}
-
 /* text colour */
 d-article {
-  color: #000000;
+  color: inherit;
+}
+
+.categories {
+  color: #FFFFFF;
+}
+
+.categories a {
+  color: #FFFFFF;
+}
+
+.posts-list {
+  color: #FFFFFF;
 }
 
 @media (min-width: 768px) {
-  d-article {
-    color: #000000;
-    grid-template-columns: [screen-start] 1fr [page-start kicker-start middle-start text-start] 65px 65px 65px 65px 65px 65px 65px 65px [ kicker-end text-end gutter-start] 45px [middle-end] 45px [page-end gutter-end] 1fr [screen-end];
-    grid-column-gap: 16px;
-  }
-  
   /* post padding in index */
   .posts-with-sidebar {
     padding-left: 20px;
@@ -146,21 +152,7 @@ d-article {
   }
 }
 
-@media and (min-width: 1000px) {
-  d-article {
-    color: #000000;
-    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
-    grid-column-gap: 16px;
-  }
-}
-
 @media (min-width: 1180px) {
-  d-article {
-    color: #000000;
-    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 20px [text-start kicker-end] 90px 90px 90px 90px 90px 90px 90px 90px [text-end gutter-start] 20px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
-    grid-column-gap: 32px;
-  }
-    
   /* post padding in index */
   .posts-with-sidebar {
     padding-left: 45px;

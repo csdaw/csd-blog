@@ -50,6 +50,23 @@ tortor bibendum, eu gravida odio maximus. Suspendisse pulvinar convallis
 hendrerit. Praesent vestibulum eget magna id venenatis. Suspendisse hendrerit 
 pulvinar leo eu ornare. 
 
+```{r, echo=TRUE}
+library(ggplot2)
+
+# Setting line type vs colour/size
+# Line type needs to be applied to a line as a whole, so it can
+# not be used with colour or size that vary across a line
+x <- seq(0.01, .99, length.out = 100)
+df <- data.frame(
+  x = rep(x, 2),
+  y = c(qlogis(x), 2 * qlogis(x)),
+  group = rep(c("a","b"), each = 100)
+)
+p <- ggplot(df, aes(x=x, y=y, group=group))
+# These work
+p + geom_line(linetype = 2)
+```
+
 ### H3 Header
 
 Etiam id lacus eleifend tellus dapibus aliquet in quis ipsum. Cras tellus mi, 
@@ -58,6 +75,14 @@ facilisis convallis. Maecenas suscipit leo aliquam, lacinia ligula id, ultricies
 sem. Nulla mollis nisl vitae arcu finibus, at lacinia velit efficitur. Ut 
 pellentesque euismod pharetra. Duis ultricies hendrerit ultricies.
 
+```{r, layout='l-body-outset'}
+d1 <- head(iris)
+d2 <- head(mtcars)
+
+knitr::kable(list(d1, d2), caption = "A tale of two tables")
+```
+
+
 #### H4 Header
 
 Donec at magna molestie, placerat justo at, accumsan erat. Nunc non nunc in 
@@ -65,6 +90,10 @@ libero lobortis lacinia nec a justo. Cras urna neque, tempus a eleifend at,
 commodo at est. Duis dignissim lacinia augue quis ultrices. Fusce pulvinar, 
 ipsum non egestas euismod, justo elit consectetur mauris, ut dignissim felis 
 felis vitae dui. Praesent aliquet consequat interdum. 
+
+```{r}
+knitr::kable(d2, format = "html", caption = "Title of the table")
+```
 
 ##### H5 Header
 

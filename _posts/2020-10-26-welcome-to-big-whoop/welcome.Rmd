@@ -107,3 +107,13 @@ fermentum, lectus sit amet eleifend mollis, quam augue commodo urna, eu
 malesuada purus eros sed orci. Fusce fringilla turpis ullamcorper vulputate 
 dapibus. Curabitur tristique quis ligula non semper. Aenean ullamcorper 
 volutpat quam in eleifend. Fusce vestibulum ante velit.
+
+<table class="table table-condensed"><tbody><tr><td align="left">
+```{r, eval=TRUE, echo=TRUE}
+# comment 
+```
+</td><td align="left">
+```{r, eval=TRUE, echo=TRUE}
+# comment
+```
+</td></tr></tbody></table>

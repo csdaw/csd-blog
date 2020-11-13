@@ -55,7 +55,7 @@ hendrerit. Praesent vestibulum eget magna id venenatis. Suspendisse hendrerit
 pulvinar leo eu ornare. 
 
 ```{r, echo=TRUE}
-# This comment is 80 characters long aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# This comment is 75 characters long aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 library(ggplot2)
 
 # Setting line type vs colour/size

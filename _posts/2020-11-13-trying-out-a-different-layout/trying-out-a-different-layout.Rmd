@@ -113,13 +113,23 @@ malesuada purus eros sed orci. Fusce fringilla turpis ullamcorper vulputate
 dapibus. Curabitur tristique quis ligula non semper. Aenean ullamcorper 
 volutpat quam in eleifend. Fusce vestibulum ante velit.
 
-<table class="table table-condensed"><tbody><tr><td align="left">
-```{r, eval=TRUE, echo=TRUE}
-# comment 
+:::: {style="display: grid; grid-template-columns: 380px 380px; grid-column-gap: 10px;"}
+
+::: {}
+Here is the **first** Div.
+
+```{r, echo=TRUE, eval=FALSE}
+str(iris)
 ```
-</td><td align="left">
-```{r, eval=TRUE, echo=TRUE}
-# comment
+:::
+
+::: {}
+And this block will be put on the right:
+
+```{r, echo=TRUE, eval=FALSE}
+plot(iris[, -5])
 ```
-</td></tr></tbody></table>
+:::
+
+::::
 

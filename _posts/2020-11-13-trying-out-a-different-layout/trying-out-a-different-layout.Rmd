@@ -10,11 +10,13 @@ output:
   distill::distill_article:
     self_contained: false
     css: article.css
+    highlight_downlit: false
+    highlight: rstudio
 ---
 
-
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE,
+                      R.options = list(width = 70))
 ```
 
 
@@ -33,6 +35,11 @@ magna aliquet, bibendum nisi a, auctor metus. Fusce mattis, turpis id consequat
 facilisis, diam metus auctor justo, eu malesuada purus enim quis sem. Aliquam 
 vulputate consequat eleifend. Phasellus et tempor sem. Curabitur venenatis est 
 vel neque commodo, non finibus massa consequat.
+
+```{r, echo=TRUE}
+devtools::session_info()
+```
+
 
 ## H2 Header
 
@@ -69,11 +76,16 @@ facilisis convallis. Maecenas suscipit leo aliquam, lacinia ligula id, ultricies
 sem. Nulla mollis nisl vitae arcu finibus, at lacinia velit efficitur. Ut 
 pellentesque euismod pharetra. Duis ultricies hendrerit ultricies.
 
-```{r, layout='l-body-outset'}
-d1 <- head(iris)
-d2 <- head(mtcars)
+```{r, layout="l-body-outset", fig.width=6, fig.height=1.5}
+library(ggplot2)
+ggplot(diamonds, aes(carat, price)) + geom_col() +
+  facet_grid(~ cut)
+```
 
-knitr::kable(list(d1, d2), caption = "A tale of two tables")
+```{r, layout="l-screen", fig.width=8, fig.height=1.5}
+library(ggplot2)
+ggplot(diamonds, aes(carat, price)) + geom_col() +
+  facet_grid(~ cut)
 ```
 
 #### H4 Header
@@ -84,9 +96,13 @@ commodo at est. Duis dignissim lacinia augue quis ultrices. Fusce pulvinar,
 ipsum non egestas euismod, justo elit consectetur mauris, ut dignissim felis 
 felis vitae dui. Praesent aliquet consequat interdum. 
 
+
 ```{r}
-knitr::kable(d2, format = "html", caption = "Title of the table")
+library(magrittr)
+knitr::kable(head(mtcars), format = "html", caption = "Title of the table") %>% 
+  kableExtra::kable_styling(position = "center")
 ```
+
 
 ##### H5 Header
 

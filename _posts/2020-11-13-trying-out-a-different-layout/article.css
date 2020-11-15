@@ -32,6 +32,7 @@ d-title p {
   
   d-article div.sourceCode pre {
     font-size: 12.8px;
+    color: white;
   }
 }
 
@@ -47,12 +48,13 @@ d-title p {
   
   d-article div.sourceCode pre {
     font-size: 14px;
+    color: white;
   }
 }
 
 @media (min-width: 1180px) {
   d-article {
-    grid-template-columns: [screen-start] 1fr [page-start kicker-start middle-start] 20px [text-start kicker-end] repeat(10, 53px) [text-end gutter-start] 20px [middle-end gutter-end page-end] 1fr [screen-end];
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start middle-start] 20px [text-start kicker-end] repeat(8, 70px) [text-end gutter-start] 20px [middle-end gutter-end page-end] 1fr [screen-end];
     grid-column-gap: 30px;
     background-color: white;
     display: grid;
@@ -62,6 +64,7 @@ d-title p {
   
   d-article div.sourceCode pre {
     font-size: 14px;
+    color: white;
   }
 }
 
@@ -69,4 +72,29 @@ d-title p {
   d-article {
     background-color: white;
   }
+}
+
+/* codeblock source */
+d-article div.sourceCode {
+  background-color: #100e17;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+/* codeblock output */
+d-article pre {
+  background-color: #100e17;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 28px;
+}
+
+code span.co {
+  color: red;
+}
+
+code {
+  color: #CFCFC2;
 }

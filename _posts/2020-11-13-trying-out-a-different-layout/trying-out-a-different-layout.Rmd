@@ -12,7 +12,7 @@ output:
     self_contained: false
     css: article.css
     highlight_downlit: false
-    highlight: espresso
+    highlight: my.theme
 ---
 
 ```{r setup, include=FALSE}
@@ -84,9 +84,9 @@ ggplot(diamonds, aes(carat, price)) + geom_col() +
 ```
 
 ```{r, layout="l-screen", fig.width=8, fig.height=1.5}
-library(ggplot2)
-ggplot(diamonds, aes(carat, price)) + geom_col() +
-  facet_grid(~ cut)
+ggplot(ToothGrowth, aes(x = supp, y = len, fill = supp)) + 
+  geom_boxplot(position = position_dodge()) + 
+  facet_wrap(~ dose)
 ```
 
 #### H4 Header

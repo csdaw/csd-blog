@@ -5,14 +5,14 @@
     "line-number-background-color": "#232629",
     "text-styles": {
         "Other": {
-            "text-color": "#27ae60",
+            "text-color": "#B877DB",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "Attribute": {
-            "text-color": "#2980b9",
+            "text-color": "#FAC29A",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -40,14 +40,14 @@
             "underline": false
         },
         "Function": {
-            "text-color": "#8e44ad",
+            "text-color": "#E68319",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "String": {
-            "text-color": "#f44f4f",
+            "text-color": "#238D98",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -61,7 +61,7 @@
             "underline": false
         },
         "Operator": {
-            "text-color": "#cfcfc2",
+            "text-color": "#BBBBBB",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -96,7 +96,7 @@
             "underline": false
         },
         "Variable": {
-            "text-color": "#27aeae",
+            "text-color": "#E95678",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -173,14 +173,14 @@
             "underline": false
         },
         "Float": {
-            "text-color": "#f67400",
+            "text-color": "#E55576",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "Comment": {
-            "text-color": "#7a7c7d",
+            "text-color": "#68696B",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -194,21 +194,21 @@
             "underline": false
         },
         "Constant": {
-            "text-color": "#27aeae",
+            "text-color": "#E55576",
             "background-color": null,
             "bold": true,
             "italic": false,
             "underline": false
         },
         "SpecialChar": {
-            "text-color": "#3daee9",
+            "text-color": "#B877DB",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "DecVal": {
-            "text-color": "#f67400",
+            "text-color": "#E55576",
             "background-color": null,
             "bold": false,
             "italic": false,

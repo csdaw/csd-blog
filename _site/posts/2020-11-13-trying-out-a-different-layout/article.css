@@ -1,23 +1,5 @@
 d-title {
-  background: 
-    /* top, transparent red, faked with gradient */ 
-    linear-gradient(
-      rgba(255, 255, 255, 0.68), 
-      rgba(255, 255, 255, 0.68)
-    ),
-    /* bottom, image */
-    url(title-image.jpg) no-repeat top left fixed;
-    background-position: cover;
-}
-
-d-title h1 {
-  background-color: rgba(77, 77, 77, 0);
-  border-radius: 3px;
-}
-
-d-title p {
-  background-color: rgba(77, 77, 77, 0);
-  border-radius: 3px;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -76,7 +58,7 @@ d-title p {
 
 /* codeblock source */
 d-article div.sourceCode {
-  background-color: #100e17;
+  background-color: #1b1727;
   border-radius: 6px;
   padding-top: 10px;
   padding-bottom: 14px;
@@ -84,7 +66,7 @@ d-article div.sourceCode {
 
 /* codeblock output */
 d-article pre {
-  background-color: #100e17;
+  background-color: #1b1727;
   border-radius: 6px;
   padding-top: 10px;
   padding-bottom: 14px;
@@ -97,4 +79,16 @@ code span.co {
 
 code {
   color: #CFCFC2;
+}
+
+d-appendix h3 {
+  color: #F65B24;
+}
+
+d-appendix p {
+  color: white;
+}
+
+d-appendix .citation-appendix {
+  background-color: #1b1727;
 }

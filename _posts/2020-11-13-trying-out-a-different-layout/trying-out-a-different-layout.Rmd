@@ -6,12 +6,13 @@ author:
   - name: Charlotte Dawson
     url: {}
 date: 11-13-2020
+citation_url: https://big-whoop.netlify.app/posts/2020-11-13-trying-out-a-different-layout/
 output:
   distill::distill_article:
     self_contained: false
     css: article.css
     highlight_downlit: false
-    highlight: rstudio
+    highlight: espresso
 ---
 
 ```{r setup, include=FALSE}

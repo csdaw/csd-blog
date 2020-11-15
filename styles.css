@@ -1,5 +1,5 @@
 body {
-  background-color: #110E17;
+  background-color: rgb(16, 14, 23);
 }
 
 /* nav bar itself */
@@ -8,9 +8,10 @@ header, nav, nav-left, nav-right {
 }
 
 .distill-site-header {
-  background-color: #0E423E;
+  background-color: rgb(16, 14, 23);
   font-weight: bold;
   color: #F78A21;
+  border-bottom: 1px solid #F78A21;
 }
 
 /* nav bar items */

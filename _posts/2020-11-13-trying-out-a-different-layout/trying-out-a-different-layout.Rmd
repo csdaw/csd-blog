@@ -1,0 +1,108 @@
+---
+title: "Trying out a different layout"
+description: |
+  A short description of the post.
+author:
+  - name: Charlotte Dawson
+    url: {}
+date: 11-13-2020
+output:
+  distill::distill_article:
+    self_contained: false
+    css: article.css
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# H1 Header
+
+Aliquam sed orci non elit ultricies laoreet. Donec rutrum sodales tempus. 
+Integer malesuada eros leo, elementum ultricies nisl gravida et. Pellentesque 
+habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+Ut congue venenatis sapien, vitae fringilla leo euismod in. Mauris a tincidunt 
+eros. Nam pulvinar ante in vestibulum lacinia. Duis sodales lectus vel orci 
+dignissim commodo. 
+
+Donec a sapien lorem. Mauris a arcu a metus aliquet sagittis. 
+Praesent cursus tincidunt odio, at suscipit lectus ullamcorper quis. Proin ac 
+magna aliquet, bibendum nisi a, auctor metus. Fusce mattis, turpis id consequat 
+facilisis, diam metus auctor justo, eu malesuada purus enim quis sem. Aliquam 
+vulputate consequat eleifend. Phasellus et tempor sem. Curabitur venenatis est 
+vel neque commodo, non finibus massa consequat.
+
+## H2 Header
+
+Quisque nec elementum est, ac venenatis lorem. Pellentesque habitant morbi 
+tristique senectus et netus et malesuada fames ac turpis egestas. Sed quis 
+velit egestas, elementum lorem eu, feugiat odio. Sed sollicitudin augue quis 
+tortor bibendum, eu gravida odio maximus. Suspendisse pulvinar convallis 
+hendrerit. Praesent vestibulum eget magna id venenatis. Suspendisse hendrerit 
+pulvinar leo eu ornare. 
+
+```{r, echo=TRUE}
+# This comment is 75 characters long aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+library(ggplot2)
+
+# Setting line type vs colour/size
+# Line type needs to be applied to a line as a whole, so it can
+# not be used with colour or size that vary across a line
+x <- seq(0.01, .99, length.out = 100)
+df <- data.frame(
+  x = rep(x, 2),
+  y = c(qlogis(x), 2 * qlogis(x)),
+  group = rep(c("a","b"), each = 100)
+)
+p <- ggplot(df, aes(x=x, y=y, group=group))
+# These work
+p + geom_line(linetype = 2)
+```
+
+### H3 Header
+
+Etiam id lacus eleifend tellus dapibus aliquet in quis ipsum. Cras tellus mi, 
+molestie sit amet auctor ac, vestibulum vel tortor. Praesent eu nibh eu risus 
+facilisis convallis. Maecenas suscipit leo aliquam, lacinia ligula id, ultricies 
+sem. Nulla mollis nisl vitae arcu finibus, at lacinia velit efficitur. Ut 
+pellentesque euismod pharetra. Duis ultricies hendrerit ultricies.
+
+```{r, layout='l-body-outset'}
+d1 <- head(iris)
+d2 <- head(mtcars)
+
+knitr::kable(list(d1, d2), caption = "A tale of two tables")
+```
+
+#### H4 Header
+
+Donec at magna molestie, placerat justo at, accumsan erat. Nunc non nunc in 
+libero lobortis lacinia nec a justo. Cras urna neque, tempus a eleifend at, 
+commodo at est. Duis dignissim lacinia augue quis ultrices. Fusce pulvinar, 
+ipsum non egestas euismod, justo elit consectetur mauris, ut dignissim felis 
+felis vitae dui. Praesent aliquet consequat interdum. 
+
+```{r}
+knitr::kable(d2, format = "html", caption = "Title of the table")
+```
+
+##### H5 Header
+
+Donec nibh libero, semper sed dictum vel, ullamcorper ut felis. Vestibulum 
+fermentum, lectus sit amet eleifend mollis, quam augue commodo urna, eu 
+malesuada purus eros sed orci. Fusce fringilla turpis ullamcorper vulputate 
+dapibus. Curabitur tristique quis ligula non semper. Aenean ullamcorper 
+volutpat quam in eleifend. Fusce vestibulum ante velit.
+
+<table class="table table-condensed"><tbody><tr><td align="left">
+```{r, eval=TRUE, echo=TRUE}
+# comment 
+```
+</td><td align="left">
+```{r, eval=TRUE, echo=TRUE}
+# comment
+```
+</td></tr></tbody></table>
+

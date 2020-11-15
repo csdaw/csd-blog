@@ -1,0 +1,72 @@
+d-title {
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 255, 255, 0.68), 
+      rgba(255, 255, 255, 0.68)
+    ),
+    /* bottom, image */
+    url(title-image.jpg) no-repeat top left fixed;
+    background-position: cover;
+}
+
+d-title h1 {
+  background-color: rgba(77, 77, 77, 0);
+  border-radius: 3px;
+}
+
+d-title p {
+  background-color: rgba(77, 77, 77, 0);
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  d-article {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start middle-start] 0px [text-start kicker-end] repeat(10, 47px) [text-end gutter-start] 0px [middle-end gutter-end page-end] 1fr [screen-end];
+    grid-column-gap: 22px;
+    background-color: white;
+    display: grid;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  
+  d-article div.sourceCode pre {
+    font-size: 12.8px;
+  }
+}
+
+@media (min-width: 1000px) {
+  d-article {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start middle-start] 0px [text-start kicker-end] repeat(10, 51px) [text-end gutter-start] 0px [middle-end gutter-end page-end] 1fr [screen-end];
+    grid-column-gap: 30px;
+    background-color: white;
+    display: grid;
+    margin: 0 auto;
+    max-width: 910px;
+  }
+  
+  d-article div.sourceCode pre {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1180px) {
+  d-article {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start middle-start] 20px [text-start kicker-end] repeat(10, 53px) [text-end gutter-start] 20px [middle-end gutter-end page-end] 1fr [screen-end];
+    grid-column-gap: 30px;
+    background-color: white;
+    display: grid;
+    margin: 0 auto;
+    max-width: 930px;
+  }
+  
+  d-article div.sourceCode pre {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  d-article {
+    background-color: white;
+  }
+}

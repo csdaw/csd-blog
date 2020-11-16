@@ -54,6 +54,13 @@ d-title {
   d-article {
     background-color: white;
   }
+  
+  d-article div.sourceCode pre {
+    font-size: 10.8px;
+    padding-top: 0px;
+    padding-left: 8px;
+    padding-bottom: 0px;
+  }
 }
 
 /* codeblock source */

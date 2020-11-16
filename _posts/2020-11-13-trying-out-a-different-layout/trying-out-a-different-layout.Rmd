@@ -125,7 +125,7 @@ str(iris)
 :::
 
 ::: {}
-And this block will be put on the right:
+Here is the **second** Div.
 
 ```{r, echo=TRUE, eval=FALSE}
 plot(iris[, -5])

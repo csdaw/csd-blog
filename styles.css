@@ -107,7 +107,8 @@ d-byline a {
 
 /* byline heading colour in article */
 d-byline h3 {
-  color: #F65B24;
+  color: #F78A21;
+  font-weight: bold;
 }
 
 /* byline margin for author and affiliation heading*/

@@ -67,22 +67,22 @@ code span.co { color: #6c6f93; } /* Comment */
 code span.cv { color: #7f8c8d; } /* CommentVar */
 code span.do { color: #a43340; } /* Documentation */
 code span.dt { color: #2980b9; } /* DataType */
-code span.dv { color: #f67400; } /* DecVal */
+code span.dv { color: #e65574; } /* DecVal */
 code span.er { color: #da4453; text-decoration: underline; } /* Error */
 code span.ex { color: #0099ff; font-weight: bold; } /* Extension */
-code span.fl { color: #f67400; } /* Float */
-code span.fu { color: #8e44ad; } /* Function */
+code span.fl { color: #e65574; } /* Float */
+code span.fu { color: #ffae00; } /* Function */
 code span.im { color: #27ae60; } /* Import */
 code span.in { color: #c45b00; } /* Information */
 code span.kw { color: #cfcfc2; font-weight: bold; } /* Keyword */
 code span.op { color: #cfcfc2; } /* Operator */
-code span.ot { color: #27ae60; } /* Other */
+code span.ot { color: #cfcfc2; } /* Other */
 code span.pp { color: #27ae60; } /* Preprocessor */
 code span.re { color: #2980b9; background-color: #153042; } /* RegionMarker */
-code span.sc { color: #3daee9; } /* SpecialChar */
+code span.sc { color: #cfcfc2; } /* SpecialChar */
 code span.ss { color: #da4453; } /* SpecialString */
-code span.st { color: #f44f4f; } /* String */
-code span.va { color: #27aeae; } /* Variable */
+code span.st { color: #80d500; } /* String */
+code span.va { color: #cfcfc2; } /* Variable */
 code span.vs { color: #da4453; } /* VerbatimString */
 code span.wa { color: #da4453; } /* Warning */
 </style>
@@ -1470,7 +1470,7 @@ code span.wa { color: #da4453; } /* Warning */
  collate  en_AU.UTF-8                 
  ctype    en_AU.UTF-8                 
  tz       Europe/London               
- date     2020-11-15                  
+ date     2020-11-16                  
 
 ─ Packages ─────────────────────────────────────────────────────────
  package     * version date       lib
@@ -1551,25 +1551,27 @@ code span.wa { color: #da4453; } /* Warning */
  CRAN (R 4.0.0)                  
 
 [1] /Library/Frameworks/R.framework/Versions/4.0/Resources/library</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>[1] TRUE</code></pre>
 </div>
 <h2 id="h2-header">H2 Header</h2>
 <p>Quisque nec elementum est, ac venenatis lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed quis velit egestas, elementum lorem eu, feugiat odio. Sed sollicitudin augue quis tortor bibendum, eu gravida odio maximus. Suspendisse pulvinar convallis hendrerit. Praesent vestibulum eget magna id venenatis. Suspendisse hendrerit pulvinar leo eu ornare.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This comment is 75 characters long aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting line type vs colour/size</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Line type needs to be applied to a line as a whole, so it can</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># not be used with colour or size that vary across a line</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fl">0.01</span>, .<span class="dv">99</span>, <span class="at">length.out =</span> <span class="dv">100</span>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">rep</span>(x, <span class="dv">2</span>),</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">c</span>(<span class="fu">qlogis</span>(x), <span class="dv">2</span> <span class="sc">*</span> <span class="fu">qlogis</span>(x)),</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;b&quot;</span>), <span class="at">each =</span> <span class="dv">100</span>)</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">group =</span> group))</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># These work</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">linetype =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This comment is 75 characters long aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting line type vs colour/size</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Line type needs to be applied to a line as a whole, so it can</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># not be used with colour or size that vary across a line</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="fl">0.01</span>, .<span class="dv">99</span>, <span class="at">length.out =</span> <span class="dv">100</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">rep</span>(x, <span class="dv">2</span>),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">c</span>(<span class="fu">qlogis</span>(x), <span class="dv">2</span> <span class="sc">*</span> <span class="fu">qlogis</span>(x)),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;b&quot;</span>), <span class="at">each =</span> <span class="dv">100</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">group =</span> group))</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># These work</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">linetype =</span> <span class="dv">2</span>)</span></code></pre></div>
 <p><img src="trying-out-a-different-layout_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
 </div>
 <h3 id="h3-header">H3 Header</h3>
@@ -1860,17 +1862,17 @@ Valiant
 </div>
 <h5 id="h5-header">H5 Header</h5>
 <p>Donec nibh libero, semper sed dictum vel, ullamcorper ut felis. Vestibulum fermentum, lectus sit amet eleifend mollis, quam augue commodo urna, eu malesuada purus eros sed orci. Fusce fringilla turpis ullamcorper vulputate dapibus. Curabitur tristique quis ligula non semper. Aenean ullamcorper volutpat quam in eleifend. Fusce vestibulum ante velit.</p>
-<div style="display: grid; grid-template-columns: 380px 380px; grid-column-gap: 10px;">
+<div style="column-count: 2; column-gap: 10px;">
 <div>
 <p>Here is the <strong>first</strong> Div.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
 </div>
 </div>
 <div>
 <p>And this block will be put on the right:</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris[, <span class="sc">-</span><span class="dv">5</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris[, <span class="sc">-</span><span class="dv">5</span>])</span></code></pre></div>
 </div>
 </div>
 </div>

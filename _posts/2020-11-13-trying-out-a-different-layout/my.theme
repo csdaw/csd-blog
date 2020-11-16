@@ -5,7 +5,7 @@
     "line-number-background-color": "#232629",
     "text-styles": {
         "Other": {
-            "text-color": "#27ae60",
+            "text-color": "#CFCFC2",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -40,14 +40,14 @@
             "underline": false
         },
         "Function": {
-            "text-color": "#8e44ad",
+            "text-color": "#FFAE00",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "String": {
-            "text-color": "#f44f4f",
+            "text-color": "#80D500",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -96,7 +96,7 @@
             "underline": false
         },
         "Variable": {
-            "text-color": "#27aeae",
+            "text-color": "#CFCFC2",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -173,7 +173,7 @@
             "underline": false
         },
         "Float": {
-            "text-color": "#f67400",
+            "text-color": "#E65574",
             "background-color": null,
             "bold": false,
             "italic": false,
@@ -201,14 +201,14 @@
             "underline": false
         },
         "SpecialChar": {
-            "text-color": "#3daee9",
+            "text-color": "#CFCFC2",
             "background-color": null,
             "bold": false,
             "italic": false,
             "underline": false
         },
         "DecVal": {
-            "text-color": "#f67400",
+            "text-color": "#E65574",
             "background-color": null,
             "bold": false,
             "italic": false,

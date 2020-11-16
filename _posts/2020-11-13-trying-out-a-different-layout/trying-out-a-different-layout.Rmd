@@ -39,6 +39,7 @@ vel neque commodo, non finibus massa consequat.
 
 ```{r, echo=TRUE}
 devtools::session_info()
+print(TRUE)
 ```
 
 
@@ -113,7 +114,7 @@ malesuada purus eros sed orci. Fusce fringilla turpis ullamcorper vulputate
 dapibus. Curabitur tristique quis ligula non semper. Aenean ullamcorper 
 volutpat quam in eleifend. Fusce vestibulum ante velit.
 
-:::: {style="display: grid; grid-template-columns: 380px 380px; grid-column-gap: 10px;"}
+:::: {style="column-count: 2; column-gap: 10px;"}
 
 ::: {}
 Here is the **first** Div.
